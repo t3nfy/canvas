@@ -489,7 +489,7 @@ extern "C"
     switch (css_baseline)
     {
     case CssBaseline::Top:
-      baseline_offset = -alphabetic_baseline - font_metrics.fAscent - font_metrics.fUnderlinePosition - font_metrics.fUnderlineThickness;
+      baseline_offset = font_metrics.fDescent
       break;
     case CssBaseline::Hanging:
       // https://github.com/chromium/chromium/blob/104.0.5092.1/third_party/blink/renderer/core/html/canvas/text_metrics.cc#L21-L25
